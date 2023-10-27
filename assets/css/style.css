@@ -13,7 +13,7 @@ body {
 }
 
 header {
-  padding-inline: 5rem;
+  padding-inline: 8rem;
   display: flex;
   justify-content: space-between;
   padding-block: 1rem;
@@ -80,7 +80,7 @@ header .navbar ul a li {
 
 .hero {
   padding-top: calc(6rem + 70px);
-  padding-inline: 5rem;
+  padding-inline: 8rem;
   background-color: #ffc017;
   display: flex;
   flex-direction: column;
@@ -110,7 +110,7 @@ header .navbar ul a li {
 }
 
 main {
-  padding-inline: 5rem;
+  padding-inline: 8rem;
 }
 
 main .trending-section-name {
@@ -138,7 +138,7 @@ main .trending-section-name h3 {
 .trending-article-container {
   margin-top: 0.5rem;
   display: flex;
-  width: 300px;
+  width: 400px;
 }
 
 .trending-article-container span:first-child {
@@ -184,11 +184,12 @@ main .trending-section-name h3 {
 /* ARTICLE  */
 
 .articles {
-  width: 60%;
+  width: 55%;
 }
 
 .article-container {
   display: flex;
+  justify-content: space-between;
   gap: 1rem;
   margin-bottom: 2rem;
 }
@@ -217,6 +218,10 @@ main .trending-section-name h3 {
 .article-container .article .article-header span {
   font-size: 13px;
   font-weight: bold;
+}
+
+.article-container .article .article-content {
+  flex-grow: 1;
 }
 
 .article-container .article .article-content h4 {
@@ -262,7 +267,7 @@ main .trending-section-name h3 {
 
 .under-main {
   display: flex;
-  padding-inline: 5rem;
+  padding-inline: 8rem;
   border-top: 1px solid #f2f2f2;
   padding-top: 3rem;
   justify-content: space-between;
