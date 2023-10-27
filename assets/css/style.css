@@ -86,6 +86,13 @@ header .navbar ul a li {
   flex-direction: column;
   padding-bottom: 6rem;
   border-bottom: 1px solid #191919;
+  position: relative;
+}
+
+.hero .m-graphics {
+  position: absolute;
+  bottom: -15px;
+  right: 0;
 }
 
 .hero h1 {
