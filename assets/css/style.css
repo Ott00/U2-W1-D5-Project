@@ -19,6 +19,8 @@ header {
   padding-block: 1rem;
   background-color: #ffc017;
   border-bottom: 1px solid #191919;
+  width: 100%;
+  position: fixed;
 }
 
 header .navbar ul {
@@ -47,11 +49,12 @@ header .navbar ul a:last-child {
 }
 
 .hero {
+  padding-top: calc(6rem + 70px);
   padding-inline: 5rem;
   background-color: #ffc017;
   display: flex;
   flex-direction: column;
-  padding-block: 6rem;
+  padding-bottom: 6rem;
   border-bottom: 1px solid #191919;
 }
 
