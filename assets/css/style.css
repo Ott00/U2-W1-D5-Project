@@ -21,6 +21,20 @@ header {
   border-bottom: 1px solid #191919;
   width: 100%;
   position: fixed;
+  z-index: 1;
+}
+
+@keyframes changeColor {
+  from {
+    background-color: #ffc017;
+  }
+  to {
+    background-color: white;
+  }
+}
+
+.header-color {
+  animation: changeColor 300ms linear forwards;
 }
 
 header .navbar ul {
@@ -42,10 +56,26 @@ header .navbar ul a li {
   font-size: 14px;
 }
 
-header .navbar ul a:last-child {
+.navbar-button {
   background-color: #191919;
   border-radius: 30px;
+}
+
+.navbar-button-change {
+  animation: changeColorBtn 300ms linear forwards;
+}
+
+.navbar-button li {
   color: white;
+}
+
+@keyframes changeColorBtn {
+  from {
+    background-color: #191919;
+  }
+  to {
+    background-color: #1a8917;
+  }
 }
 
 .hero {
@@ -151,16 +181,6 @@ main .trending-section-name h3 {
   font-size: 12px;
 }
 
-/* UNDER MAIN  */
-
-.under-main {
-  display: flex;
-  padding-inline: 5rem;
-  border-top: 1px solid #f2f2f2;
-  padding-top: 3rem;
-  justify-content: space-between;
-}
-
 /* ARTICLE  */
 
 .articles {
@@ -238,9 +258,22 @@ main .trending-section-name h3 {
   cursor: pointer;
 }
 
+/* UNDER MAIN  */
+
+.under-main {
+  display: flex;
+  padding-inline: 5rem;
+  border-top: 1px solid #f2f2f2;
+  padding-top: 3rem;
+  justify-content: space-between;
+}
+
 /* ASIDE  */
 aside {
   width: 35%;
+  position: sticky;
+  top: 100px;
+  max-height: 300px;
 }
 
 aside h3 {
