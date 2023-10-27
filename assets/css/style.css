@@ -194,6 +194,11 @@ main .trending-section-name h3 {
   margin-bottom: 2rem;
 }
 
+.article-container .bookmark {
+  display: flex;
+  align-items: flex-end;
+}
+
 .article-container .article {
   display: flex;
   flex-direction: column;
